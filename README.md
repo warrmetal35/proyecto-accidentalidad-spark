@@ -163,6 +163,7 @@ Latencia de procesamiento end-to-end
 🖼️ Evidencias de Ejecución
 
 #Captura 1: Pipeline de Ingesta en Tiempo Real
-(https://github.com/warrmetal35/proyecto-accidentalidad-spark/blob/main/producer_kafka.png.png)
-Kafka Producer generando eventos de accidentalidad simulados cada 5 segundos
+# Captura 1: Pipeline de Ingesta en Tiempo Real
+![Kafka Producer](https://github.com/warrmetal35/proyecto-accidentalidad-spark/blob/main/producer_kafka.png.png)
+- Kafka Producer generando eventos de accidentalidad simulados cada 5 segundos
 
