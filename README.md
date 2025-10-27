@@ -162,3 +162,4 @@ Latencia de procesamiento end-to-end
 
 🖼️ Evidencias de Ejecución
 Captura 1: Pipeline de Ingesta en Tiempo Real
+
