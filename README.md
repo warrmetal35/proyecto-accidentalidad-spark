@@ -162,4 +162,4 @@ Latencia de procesamiento end-to-end
 
 🖼️ Evidencias de Ejecución
 Captura 1: Pipeline de Ingesta en Tiempo Real
-https://github.com/warrmetal35/proyecto-accidentalidad-spark/raw/main/docs/images/producer_kafka.png
+https://github.com/warrmetal35/proyecto-accidentalidad-spark/raw/main/producer_kafka.png
