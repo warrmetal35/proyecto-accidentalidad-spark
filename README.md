@@ -104,37 +104,37 @@ Fase 1: Procesamiento Batch (Análisis Histórico)
 spark-submit spark_batch_analysis.py
 
 # Este script realiza:
-# - Limpieza y transformación de datos crudos
-# - Análisis de distribución temporal (años, meses, horas)
-# - Agregaciones por gravedad y patrones estacionales
-# - Generación de datasets listos para reporting
+ - Limpieza y transformación de datos crudos
+ - Análisis de distribución temporal (años, meses, horas)
+ - Agregaciones por gravedad y patrones estacionales
+ - Generación de datasets listos para reporting
 
 Fase 2: Procesamiento Streaming (Tiempo Real)
 # Paso 2.1: Iniciar el generador de eventos de accidentalidad
 python3 kafka_accidentes_producer.py
 
 # Este componente:
-# - Lee el dataset histórico y simula eventos en tiempo real
-# - Publica mensajes JSON al topic de Kafka cada 5 segundos
-# - Incluye metadatos completos de cada accidente simulado
+ - Lee el dataset histórico y simula eventos en tiempo real
+ - Publica mensajes JSON al topic de Kafka cada 5 segundos
+ - Incluye metadatos completos de cada accidente simulado
 
 # Paso 2.2: Iniciar el consumidor Spark Streaming
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 spark_streaming_consumer.py
 
 # Este componente:
-# - Se suscribe al topic de Kafka y consume mensajes
-# - Aplica ventanas deslizantes de 1 minuto para agregaciones
-# - Calcula métricas en tiempo real por gravedad de accidente
-# - Output continuo a consola con estadísticas actualizadas
+ - Se suscribe al topic de Kafka y consume mensajes
+ - Aplica ventanas deslizantes de 1 minuto para agregaciones
+ - Calcula métricas en tiempo real por gravedad de accidente
+ - Output continuo a consola con estadísticas actualizadas
 
 Fase 3: Monitoreo y Visualización
 # Acceder a la interfaz web de Spark
 http://localhost:4040 (se reemplazo por mi ip)
 
 # La UI proporciona:
-# - Métricas de ejecución de jobs en tiempo real
-# - Monitoring de recursos y performance
-# - Debugging de operaciones de streaming
+ - Métricas de ejecución de jobs en tiempo real
+ - Monitoring de recursos y performance
+ - Debugging de operaciones de streaming
 
 📊 Resultados y Análisis de Datos
 Hallazgos del Análisis Batch
