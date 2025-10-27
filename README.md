@@ -162,4 +162,20 @@ Latencia de procesamiento end-to-end
 
 🖼️ Evidencias de Ejecución
 Captura 1: Pipeline de Ingesta en Tiempo Real
+proyecto-accidentalidad-spark/docs/images/producer_kafka.png.png at main · warrmetal35/proyecto-accidentalidad-spark
+Kafka Producer generando eventos de accidentalidad simulados cada 5 segundos
+Captura 2: Procesamiento Streaming Activo
+proyecto-accidentalidad-spark/docs/images/spark_streaming.png at main · warrmetal35/proyecto-accidentalidad-spark
+Spark Streaming aplicando ventanas temporales y calculando agregaciones
+Captura 3: Monitoring de Performance
+proyecto-accidentalidad-spark/docs/images/spark_ui_jobs.png at main · warrmetal35/proyecto-accidentalidad-spark
+Interfaz web de Spark mostrando jobs activos y métricas de ejecución
+Captura 4: Estadísticas de Streaming
+proyecto-accidentalidad-spark/docs/images/spark_ui_streamin.png at main · warrmetal35/proyecto-accidentalidad-spark
+Dashboard de streaming con rates de procesamiento y latencias
+Captura 5: Resultados de Análisis Batch
+proyecto-accidentalidad-spark/docs/images/batch_analysis.png at main · warrmetal35/proyecto-accidentalidad-spark
+
+Resultados del análisis exploratorio sobre datos históricos
+
 
